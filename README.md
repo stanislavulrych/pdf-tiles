@@ -16,6 +16,20 @@ Currently only limited to A4 format.
 
 Output file is always `out.pdf`.
 
+
+## Example
+
+Merge the top left (A6) corners of 1.pdf 2.pdf 3.pdf 4.pdf into a single page
+
+    1 |           2 |          3 |          4 |                  1 | 2
+    --|--         --|--        --|--        --|--      ===>      --|--
+      |             |            |            |                  3 | 4
+
+by
+    python pdf-tiles.py 2 2 1.pdf 2.pdf 3.pdf 4.pdf
+    
+
+
 ## Contributions
 
 Maintaining `pdf-tiles` is a collaborative effort. You can support the project by
